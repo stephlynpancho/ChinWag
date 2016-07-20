@@ -1,0 +1,87 @@
+<link rel="stylesheet" type="text/css" href="../css/loginstyle.css">
+<div ng-cloak="" class="tabsdemoDynamicHeight">
+  <md-content>
+<div class="form">
+<md-tabs md-center-tabs md-dynamic-height="" md-border-bottom="">
+   <div class="tab-content">   
+    <md-tab label="Login">
+        <md-content class="md-padding">
+            <h1 class="md-display-2">Login</h1>
+            <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form ng-submit="loginUser(getUser)">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" ng-model="getUser.email" required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" ng-model="getUser.password" required autocomplete="off"/>
+          </div>
+          <button>Login</button>
+          </form>
+
+        </div>
+        </md-content>
+        </md-tab>
+
+        <md-tab label="Register">
+        <md-content class="md-padding">
+            <h1 class="md-display-2">Register</h1>
+            <div id="signup">
+          <form ng-submit="addUser(newUser)">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Name<span class="req">*</span>
+              </label>
+              <input type="text" ng-model="newUser.name" required autocomplete="off" />
+            </div>
+        
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" ng-model="newUser.email" required autocomplete="off"/>
+          </div>
+
+            <div class="field-wrap">
+              <label>
+                Password<span class="req">*</span>
+              </label>
+              <input type="password" ng-model="newUser.password" required autocomplete="off"/>
+            </div>
+          </div>
+
+          
+          <div class="field-wrap">
+            <label>
+              Confirm Password<span class="req">*</span>
+            </label>
+            <input type="password" ng-model="newUser.confirmPassword" required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Register</button>
+          
+          </form>
+
+        </div>
+        </md-content>
+    </md-tab>
+
+</md-tabs>
+
+</div> 
+      <!-- tab-content -->
+      
+</div> <!-- /form -->
+  </md-content>
+</div>
